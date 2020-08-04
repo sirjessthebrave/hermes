@@ -1,0 +1,13 @@
+{
+    "name": "quiz-gen",
+    "description": "quiz generator",
+    "version": "1.0.0",
+    "engines": {
+      "node": "12.x"
+    },
+    "scripts": {
+        "start": "npx node server/index.js",
+        "build": "cd client/ && yarn build",
+        "heroku-postbuild": "ng build --prod"
+      }
+  }
