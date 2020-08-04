@@ -7,7 +7,9 @@
     },
     "scripts": {
         "start": "npx node server/index.js",
-        "build": "cd client/ && yarn build",
+        "build:client": "cd client/ && yarn install && yarn build",
+        "build:server": "cd server/ && yarn install && node index.js",
+        "build": "yarn build:server && yarn build:client",
         "heroku-postbuild": "ng build --prod"
       }
   }
